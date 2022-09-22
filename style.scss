@@ -1,3 +1,5 @@
+$colorPink: #F16D7F;
+
 * {
     margin: 0;
     padding: 0;
@@ -6,12 +8,10 @@
 
 .container {
     margin: 0 auto;
-    max-width: 1140px;    
+    max-width: 1140px;
 }
 
 .top {
-    display: flex;
-    flex-direction: column;
     background: #F1E4E6;
 }
 
@@ -40,17 +40,19 @@
 }
 
 .header__content {
-    padding-top: 290px;
-    padding-bottom: 381px;  
-    width: 100%;
-    display: flex;
-    justify-content: end;  
+
+
+
+    background: url(images/manmodel.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: bottom left;
 }
 
 .header__content_heading {
-    border-left: #F16D7F 12px solid;
+    border-left: $colorPink 12px solid;
     padding-left: 16px;
-    
+
 }
 
 .heading__brand {
@@ -60,39 +62,61 @@
     font-size: 48px;
 }
 
-@media (max-width: 1024px) {
-    .container {
-        margin-left: 16px;
-        margin-right: 16px;
-    }
-
-    .menu__left {
-        margin-left: 16px;        
-    }
-
-    .menu__right {
-        margin-right: 16px;
-    }
-    .menu__right img:nth-child(2) {
-        margin-right: 42px;
-        margin-left: 25px;
-    }
+.heading__lux {
+    font-size: 34px;
 }
 
-@media (max-width: 667px) {
-    .menu__left {
-        margin: 0;        
-    }
-
-    .menu__right {
-        margin: 0;
-    }
-
-    .menu__right img:nth-child(2) {
-        display: none;
-    }
-
-    .menu__right img:nth-child(3) {
-        display: none;
-    }
+.fashion__text {
+    color: $colorPink;
 }
+
+// @media (max-width: 1024px) {
+//     .container {
+//         margin-left: 16px;
+//         margin-right: 16px;
+//     }
+
+//     .menu__left {
+//         margin-left: 16px;
+//     }
+
+//     .menu__right {
+//         margin-right: 16px;
+//     }
+
+//     .menu__right img:nth-child(2) {
+//         margin-right: 42px;
+//         margin-left: 25px;
+//     }
+
+//     .header__content {
+//         padding-top: 138px;
+//         padding-bottom: 151px;
+//         padding-right: 0;
+//         background-size: 41%;
+//         width: auto;
+//     }
+
+//     .heading__brand {
+//         font-size: 44px;
+//         line-height: 53px;
+//     }
+// }
+
+// @media (max-width: 667px) {
+//     .menu__left {
+//         margin: 0;
+//     }
+
+//     .menu__right {
+//         margin: 0;
+//     }
+
+//     .menu__right img:nth-child(2) {
+//         display: none;
+//     }
+
+//     .menu__right img:nth-child(3) {
+//         display: none;
+//     }
+// }
