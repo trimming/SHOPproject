@@ -40,13 +40,7 @@ $colorPink: #F16D7F;
 }
 
 .header__content {
-
-
-
-    background: url(images/manmodel.png);
-    background-repeat: no-repeat;
-    background-size: 60%;
-    background-position: bottom left;
+   
 }
 
 .header__content_heading {
@@ -70,53 +64,53 @@ $colorPink: #F16D7F;
     color: $colorPink;
 }
 
-// @media (max-width: 1024px) {
-//     .container {
-//         margin-left: 16px;
-//         margin-right: 16px;
-//     }
+@media (max-width: 1024px) {
+    .container {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
 
-//     .menu__left {
-//         margin-left: 16px;
-//     }
+    .menu__left {
+        margin-left: 16px;
+    }
 
-//     .menu__right {
-//         margin-right: 16px;
-//     }
+    .menu__right {
+        margin-right: 16px;
+    }
 
-//     .menu__right img:nth-child(2) {
-//         margin-right: 42px;
-//         margin-left: 25px;
-//     }
+    .menu__right img:nth-child(2) {
+        margin-right: 42px;
+        margin-left: 25px;
+    }
 
-//     .header__content {
-//         padding-top: 138px;
-//         padding-bottom: 151px;
-//         padding-right: 0;
-//         background-size: 41%;
-//         width: auto;
-//     }
+    .header__content {
+        padding-top: 138px;
+        padding-bottom: 151px;
+        padding-right: 0;
+        background-size: 41%;
+        width: auto;
+    }
 
-//     .heading__brand {
-//         font-size: 44px;
-//         line-height: 53px;
-//     }
-// }
+    .heading__brand {
+        font-size: 44px;
+        line-height: 53px;
+    }
+}
 
-// @media (max-width: 667px) {
-//     .menu__left {
-//         margin: 0;
-//     }
+@media (max-width: 667px) {
+    .menu__left {
+        margin: 0;
+    }
 
-//     .menu__right {
-//         margin: 0;
-//     }
+    .menu__right {
+        margin: 0;
+    }
 
-//     .menu__right img:nth-child(2) {
-//         display: none;
-//     }
+    .menu__right img:nth-child(2) {
+        display: none;
+    }
 
-//     .menu__right img:nth-child(3) {
-//         display: none;
-//     }
-// }
+    .menu__right img:nth-child(3) {
+        display: none;
+    }
+}
