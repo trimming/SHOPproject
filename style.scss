@@ -40,13 +40,15 @@ $colorPink: #F16D7F;
 }
 
 .header__content {
-   
+    position: relative;
 }
 
 .header__content_heading {
     border-left: $colorPink 12px solid;
     padding-left: 16px;
-
+    position: absolute;
+    top: 290px;
+    right: 100px;
 }
 
 .heading__brand {
@@ -84,11 +86,9 @@ $colorPink: #F16D7F;
     }
 
     .header__content {
-        padding-top: 138px;
-        padding-bottom: 151px;
-        padding-right: 0;
-        background-size: 41%;
-        width: auto;
+        
+        
+        
     }
 
     .heading__brand {

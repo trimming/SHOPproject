@@ -46,15 +46,15 @@
 }
 
 .header__content {
-  background: url(images/manmodel.png);
-  background-repeat: no-repeat;
-  background-size: 60%;
-  background-position: bottom left;
+  position: relative;
 }
 
 .header__content_heading {
   border-left: #F16D7F 12px solid;
   padding-left: 16px;
+  position: absolute;
+  top: 290px;
+  right: 100px;
 }
 
 .heading__brand {
@@ -70,5 +70,41 @@
 
 .fashion__text {
   color: #F16D7F;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .menu__left {
+    margin-left: 16px;
+  }
+  .menu__right {
+    margin-right: 16px;
+  }
+  .menu__right img:nth-child(2) {
+    margin-right: 42px;
+    margin-left: 25px;
+  }
+  .heading__brand {
+    font-size: 44px;
+    line-height: 53px;
+  }
+}
+
+@media (max-width: 667px) {
+  .menu__left {
+    margin: 0;
+  }
+  .menu__right {
+    margin: 0;
+  }
+  .menu__right img:nth-child(2) {
+    display: none;
+  }
+  .menu__right img:nth-child(3) {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
