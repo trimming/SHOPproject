@@ -11,6 +11,7 @@ $colorPink: #F16D7F;
     max-width: 1140px;
 }
 
+// ---------TOP
 .top {
     background: #F1E4E6;
 }
@@ -73,7 +74,65 @@ $colorPink: #F16D7F;
     color: $colorPink;
 }
 
+//-------CATEGORY
+.category {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 260px 180px;
+    padding-top: 65px;
+    padding-bottom: 96px;
+}
+
+.category__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item__women {
+    background: url(images/women.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item__men {
+    background: url(images/men.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item__kids {
+    background: url(images/kids.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item__accesories {
+    grid-column: 1/4;
+    background: url(images/accesories.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.category__heading {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: $colorPink;
+    text-align: center;
+}
+
+.category__heading_text {
+    font-weight: 400;
+    line-height: 19px;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
 @media (max-width: 1024px) {
+
+    //-------TOP
     .container {
         margin-left: 16px;
         margin-right: 16px;
@@ -113,6 +172,13 @@ $colorPink: #F16D7F;
         line-height: 29px;
     }
 
+    //-------CATEGORY
+    .category {
+        grid-gap: 20px;
+        grid-template-rows: 167px 116px;
+        padding-top: 20px;
+        padding-bottom: 155px;
+    }
 }
 
 @media (max-width: 667px) {
@@ -157,5 +223,18 @@ $colorPink: #F16D7F;
 
     .header__content_image {
         display: none;
+    }
+
+    //-------CATEGORY
+    .category {
+        grid-gap: 32px;
+        grid-template-rows: 248px 248px 248px 111px;
+        grid-template-columns: 1fr;
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .item__accesories {
+        grid-column: 1/2;
     }
 }
