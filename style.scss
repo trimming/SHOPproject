@@ -164,11 +164,17 @@ $colorPink: #F16D7F;
     grid-gap: 30px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 581px);
+    padding-bottom: 48.5px;
 }
 
-.card:hover img {
-    background: url(images/from_card_2.png);
+.card {
+    display: flex;
+    flex-direction: column;
 }
+
+// .card:hover img {
+//     background: url(images/from_card_2.png);
+// }
 
 .card__info {
     background: #F8F8F8;
@@ -199,6 +205,16 @@ $colorPink: #F16D7F;
     font-weight: 400;
     color: #F16D7F;
     padding-top: 18px;
+}
+
+
+
+.fetured__button {
+    text-decoration: none;
+    border: 1px solid #FF6A6A;
+    box-sizing: border-box;
+    padding: 14.5px 38.5px;
+    color: #FF6A6A;
 }
 
 @media (max-width: 1024px) {
@@ -249,6 +265,17 @@ $colorPink: #F16D7F;
         grid-template-rows: 167px 116px;
         padding-top: 20px;
         padding-bottom: 155px;
+    }
+
+    //-------FETURED
+    .fetured__header {
+        padding-bottom: 73px;
+    }
+
+    .fetured__card_block {
+        grid-template-columns: repeat(2, 360px);
+        grid-gap: 16px;
+        grid-template-rows: repeat(3, 581px);
     }
 }
 
@@ -307,5 +334,16 @@ $colorPink: #F16D7F;
 
     .item__accesories {
         grid-column: 1/2;
+    }
+
+    //-------FETURED
+    .fetured__header {
+        padding-bottom: 64px;
+    }
+
+    .fetured__card_block {
+        grid-template-columns: 360px;
+        grid-template-rows: repeat(6, 581px);
+        padding-bottom: 41px;
     }
 }
