@@ -241,6 +241,75 @@
   color: #FF6A6A;
 }
 
+.footer__upper {
+  background: #222224;
+  margin-top: 95.5px;
+}
+
+.footer__upper_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 104px;
+  padding-top: 104px;
+}
+
+.footer__upper_block_item {
+  text-align: center;
+}
+
+.footer__upper_block_heading {
+  font-weight: 400;
+  line-height: 24px;
+  color: #FBFBFB;
+  font-size: 19.96px;
+  padding-top: 19px;
+  padding-bottom: 16px;
+}
+
+.footer__upper_block_text {
+  font-weight: 300;
+  line-height: 17px;
+  font-size: 13.972px;
+  color: #FBFBFB;
+  text-align: center;
+}
+
+.footer__middle {
+  background: url(images/surf.png);
+}
+
+.footer__middle_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 156px;
+  padding-top: 90px;
+}
+
+.footer__middle_block_feedback {
+  text-align: center;
+  max-width: 360px;
+}
+
+.footer__middle_block_feedback_text {
+  padding-top: 40px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  font-size: 20px;
+  color: #222224;
+}
+
 @media (max-width: 1024px) {
   .container {
     margin-left: 16px;
@@ -289,6 +358,19 @@
     grid-gap: 16px;
     -ms-grid-rows: (581px)[3];
         grid-template-rows: repeat(3, 581px);
+  }
+  .footer__upper_block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__upper_block_item {
+    padding-bottom: 48px;
+    max-width: 400px;
   }
 }
 
@@ -354,6 +436,17 @@
     -ms-grid-rows: (581px)[6];
         grid-template-rows: repeat(6, 581px);
     padding-bottom: 41px;
+  }
+  .footer__upper_block {
+    padding-top: 48px;
+    padding-bottom: 81px;
+  }
+  .footer__upper_block_item {
+    padding-bottom: 47px;
+  }
+  .footer__upper_block_heading {
+    padding-bottom: 14px;
+    padding-top: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */
