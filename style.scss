@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 $colorPink: #F16D7F;
 
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: Lato, sans-serif;
 }
 
 .container {
@@ -12,7 +13,7 @@ $colorPink: #F16D7F;
 }
 
 // ---------TOP
-.top {
+.header {
     background: #F1E4E6;
 }
 
@@ -41,20 +42,31 @@ $colorPink: #F16D7F;
 }
 
 .header__content {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-height: 764px;
+    max-width: 1600px;
 }
 
 .header__content_image {
     display: block;
-    height: 100%;
+    width: 50%;
+    height: inherit;
+    object-fit: contain;
 }
 
 .header__content_heading {
-    border-left: $colorPink 12px solid;
+    box-sizing: border-box;
+    margin-left: 63px;
+    width: 50%;
+    align-self: center;
+    height: inherit;
+}
+
+.header__content_heading_text {
+    border-left: #F16D7F 12px solid;
     padding-left: 16px;
-    position: absolute;
-    top: 290px;
-    right: 100px;
 }
 
 .heading__brand {
@@ -298,14 +310,8 @@ $colorPink: #F16D7F;
         margin-left: 25px;
     }
 
-    .header__content {
-        height: 367px;
-    }
-
     .header__content_heading {
-        top: 138px;
-        right: 33.5px;
-        padding-bottom: 10px;
+        margin-left: 39px;
     }
 
     .heading__brand {
@@ -369,20 +375,19 @@ $colorPink: #F16D7F;
 
     .header__content {
         height: 363px;
-        display: flex;
-        justify-content: center;
+
     }
 
     .header__content_heading {
-        padding-bottom: 0;
-        right: auto;
-        top: 148px;
+        padding-top: 148px;
+        margin: 0 auto;
+        width: inherit;
     }
 
     .heading__brand {
         font-weight: 700;
         font-size: 38px;
-        line-height: 46px;
+        line-height: 30px;
     }
 
     .heading__lux {
@@ -423,7 +428,7 @@ $colorPink: #F16D7F;
         padding-top: 48px;
         padding-bottom: 81px;
     }
-    
+
     .footer__upper_block_item {
         padding-bottom: 47px;
     }
