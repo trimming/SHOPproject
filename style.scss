@@ -31,6 +31,32 @@ $colorPink: #F16D7F;
 .menu__right {
     display: flex;
     align-items: center;
+    
+}
+
+.menu__right img {
+    height: inherit;
+    object-fit: cover;
+}
+
+.menu__right_cart {
+    position: relative;
+    height: 32px;
+}
+
+.menu__right span {
+    position: absolute;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    top: 17px;
+    right: 99px;
+    background: #F16D7F;
+    border-radius: 50%;
+    padding: 3px 6px;
+    top: -5px;
+    right: -10px;
 }
 
 .menu__left img:first-child {
@@ -274,6 +300,7 @@ $colorPink: #F16D7F;
     justify-content: center;
     padding-bottom: 104px;
     padding-top: 104px;
+    align-items: center;
 }
 
 .footer__upper_block_item {
@@ -382,6 +409,42 @@ $colorPink: #F16D7F;
     border: none;
 }
 
+.footer__copy {
+    background: #222224;
+    height: 79px;
+}
+
+.footer__copy_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+}
+
+.footer__copy_box_text {
+    font-weight: 400;
+    line-height: 19px;
+    color: #FBFBFB;
+    font-size: 16px;
+}
+
+.footer__copy_box_icon {
+    background: #FFFFFF;
+    
+    text-decoration: none;
+    box-sizing: border-box;
+    margin-right: 7px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__copy_right {
+    display: flex;
+}
+
 @media (max-width: 1024px) {
 
     //-------TOP
@@ -476,7 +539,7 @@ $colorPink: #F16D7F;
         display: none;
     }
 
-    .menu__right img:nth-child(3) {
+    .menu__right_cart {
         display: none;
     }
 
@@ -558,5 +621,20 @@ $colorPink: #F16D7F;
     .footer__middle_block_subscribe_heading_text {
         font-size: 14px;
         line-height: 21px;
+    }
+
+    .footer__copy {
+        height: 143px;
+        padding-bottom: 9px;
+    }
+
+    .footer__copy_box {
+        flex-flow: column-reverse;
+        justify-content: center;
+    }
+
+    .footer__copy_right {
+        flex-grow: 1;
+        padding-top: 43px;
     }
 }
