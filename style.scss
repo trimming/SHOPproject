@@ -31,7 +31,7 @@ $colorPink: #F16D7F;
 .menu__right {
     display: flex;
     align-items: center;
-    
+
 }
 
 .menu__right img {
@@ -110,6 +110,53 @@ $colorPink: #F16D7F;
 
 .fashion__text {
     color: $colorPink;
+}
+
+.hidden__menu {
+    background: #FFFFFF;
+    width: 232px;
+    padding-left: 33px;
+    box-sizing: border-box;
+}
+
+.hidden__menu_close {
+    display: flex;
+    justify-content: end;
+    padding-right: 16px;
+    padding-top: 16px;
+}
+
+.hidden__menu_heading {
+    font-weight: 700;
+    line-height: 17px;
+    color: #000000;
+    font-size: 14px;
+}
+
+.hidden__menu_list {
+    list-style-type: none;
+    padding-left: 21px;
+}
+
+.hidden__menu_list li {
+    padding-bottom: 11px;
+}
+
+.hidden__menu_item {
+    font-weight: 400;
+    line-height: 17px;
+    font-size: 14px;
+    color: #6F6E6E;
+    text-decoration: none;
+}
+
+.hidden__menu_category {
+    font-weight: 400;
+    line-height: 17px;
+    color: #F16D7F;
+    font-size: 14px;
+    padding-bottom: 12px;
+    padding-top: 20px;
 }
 
 //-------CATEGORY
@@ -430,7 +477,7 @@ $colorPink: #F16D7F;
 
 .footer__copy_box_icon {
     background: #FFFFFF;
-    
+
     text-decoration: none;
     box-sizing: border-box;
     margin-right: 7px;
