@@ -125,12 +125,27 @@
   color: #F16D7F;
 }
 
+.header__wrap {
+  position: relative;
+}
+
 .hidden__menu {
   background: #FFFFFF;
   width: 232px;
   padding-left: 33px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: none;
+}
+
+@media (min-width: 1600px) {
+  .hidden__menu {
+    display: block;
+  }
 }
 
 .hidden__menu_close {

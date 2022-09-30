@@ -112,11 +112,26 @@ $colorPink: #F16D7F;
     color: $colorPink;
 }
 
+.header__wrap {
+    position: relative;
+}
+
 .hidden__menu {
     background: #FFFFFF;
     width: 232px;
     padding-left: 33px;
     box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: none;
+}
+
+@media (min-width: 1600px) {
+    .hidden__menu {
+        display: block;
+    }
 }
 
 .hidden__menu_close {
