@@ -385,6 +385,44 @@ $colorPink: #F16D7F;
     color: $colorPink;
 }
 
+//-------FILTER
+.filter__nav {
+    display: flex;
+    padding-top: 51px;
+    padding-bottom: 65px;
+}
+
+.nav__center {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav__left a {
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 17px;
+    color: #000000;
+    font-size: 14px;
+    padding-right: 11px;
+}
+
+.nav__center a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    padding-right: 10px;
+    padding-left: 28px;
+}
+
+.filter__card_block {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: repeat(3, 581px);
+}
+
 //-------FOOTER
 .footer__upper {
     background: #222224;
