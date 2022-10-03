@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Catalog</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="wrapper">
         <div class="content">
-            <div class="header">
+            <header class="header__catalog">
                 <div class="header__menu">
                     <div class="menu container">
                         <div class="menu__left">
@@ -30,74 +30,76 @@
                         </div>
                     </div>
                 </div>
+                <div class="arrivals">
+                    <div class="arrivals__container container">
+                        <div class="arrivals__left"><a href="#">NEW ARRIVALS</a></div>
+                        <div class="arrivals__right">
+                            <a href="#">HOME</a>
+                            <span>/</span>
+                            <a href="#">MEN</a>
+                            <span>/</span>
+                            <a href="#">NEW ARRIVALS</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
 
-                <div class="header__wrap">
-                    <div class="header__content">
-                        <img class="header__content_image" src="images/manmodel.png" alt="model">
-                        <div class="header__content_heading">
-                            <div class="header__content_heading_text">
-                                <h1 class="heading__brand">THE BRAND</h1>
-                                <h2 class="heading__lux">OF LUXERIOUS <span class="fashion__text">FASHION</span></h2>
+            <div class="filter container">
+                <nav class="filter__nav">
+                    <div class="nav__left">
+                        <a class="nav__left_filter" href="#">FILTER</a>
+                        <img class="nav__left_img" src="images/filter.svg" alt="bar">
+                        <div class="nav__left_hidden">
+
+
+                            <img class="nav__left_hidden_img" src="images/filter_red.svg" alt="bar">
+
+                            <div class="nav__left_hidden_category">
+                                <h5 class="nav__left_hidden_category_item">CATEGORY</h5>
+                                <ul>
+                                    <li><a href="#">Accessories</a></li>
+                                    <li><a href="#">Bags</a></li>
+                                    <li><a href="#">Denim</a></li>
+                                    <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                    <li><a href="#">Jackets & Coats</a></li>
+                                    <li><a href="#">Polos</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shoes</a></li>
+                                    <li><a href="#">Sweaters & Knits</a></li>
+                                    <li><a href="#">T-Shirts</a></li>
+                                    <li><a href="#">Tanks</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav__left_hidden_category">
+                                <h5 class="nav__left_hidden_category_item">BRAND</h5>
+                            </div>
+                            <div class="nav__left_hidden_category">
+                                <h5 class="nav__left_hidden_category_item">DESIGNER</h5>
                             </div>
                         </div>
                     </div>
-
-                    <div class="hidden__menu">
-                        <div class="hidden__menu_close"><img src="images/close.svg" alt="close"></div>
-                        <h4 class="hidden__menu_heading">MENU</h4>
-                        <h5 class="hidden__menu_category">MAN</h5>
-                        <ul class="hidden__menu_list">
-                            <li><a class="hidden__menu_item" href="#">Accessories</a></li>
-                            <li><a class="hidden__menu_item" href="#">Bags</a></li>
-                            <li><a class="hidden__menu_item" href="#">Denim</a></li>
-                            <li><a class="hidden__menu_item" href="#">T-Shirts</a></li>
-                        </ul>
-                        <h5 class="hidden__menu_category">WOMAN</h5>
-                        <ul class="hidden__menu_list">
-                            <li><a class="hidden__menu_item" href="#">Accessories</a></li>
-                            <li><a class="hidden__menu_item" href="#">Jackets & Coats</a></li>
-                            <li><a class="hidden__menu_item" href="#">Polos</a></li>
-                            <li><a class="hidden__menu_item" href="#">T-Shirts</a></li>
-                            <li><a class="hidden__menu_item" href="#">Shirts</a></li>
-                        </ul>
-                        <h5 class="hidden__menu_category">KIDS</h5>
-                        <ul class="hidden__menu_list">
-                            <li><a class="hidden__menu_item" href="#">Accessories</a></li>
-                            <li><a class="hidden__menu_item" href="#">Jackets & Coats</a></li>
-                            <li><a class="hidden__menu_item" href="#">Polos</a></li>
-                            <li><a class="hidden__menu_item" href="#">T-Shirts</a></li>
-                            <li><a class="hidden__menu_item" href="#">Shirts</a></li>
-                            <li><a class="hidden__menu_item" href="#">Bags</a></li>
-                        </ul>
+                    <div class="nav__center">
+                        <div>
+                            <a class="nav__center_category" href="#">TRENDING NOW</a>
+                            <img src="images/check.svg" alt="check">
+                        </div>
+                        <div class="nav__center_size">
+                            <a class="nav__center_category" href="#">SIZE</a>
+                            <img src="images/check.svg" alt="check">
+                            <div class="nav__center_hidden">
+                                <div class="nav__center_hidden_item"><input type="checkbox" name="size" id="">XS</div>
+                                <div class="nav__center_hidden_item"><input type="checkbox" name="size" id="">S</div>
+                                <div class="nav__center_hidden_item"><input type="checkbox" name="size" id="">M</div>
+                                <div class="nav__center_hidden_item"><input type="checkbox" name="size" id="">L</div>
+                            </div>
+                        </div>
+                        <div>
+                            <a class="nav__center_category" href="#">PRICE</a>
+                            <img src="images/check.svg" alt="check">
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="category container">
-                <div class="category__items item__women">
-                    <h3 class="category__heading"><span class="category__heading_text">30% OFF
-                        </span><br>FOR WOMEN</h3>
-                </div>
-                <div class="category__items item__men">
-                    <h3 class="category__heading"><span class="category__heading_text">HOT DEAL
-                        </span><br>FOR MEN</h3>
-                </div>
-                <div class="category__items item__kids">
-                    <h3 class="category__heading"><span class="category__heading_text">NEW ARRIVALS
-                        </span><br>FOR KIDS</h3>
-                </div>
-                <div class="category__items item__accesories">
-                    <h3 class="category__heading"><span class="category__heading_text">LUXIROUS & TRENDY
-                        </span><br>ACCESORIES</h3>
-                </div>
-            </div>
-
-            <div class="fetured container">
-                <div class="fetured__header">
-                    <h2 class="fetured__heading">Fetured Items</h2>
-                    <p class="fetured__heading_text">Shop for items based on what we featured in this week</p>
-                </div>
-                <div class="fetured__card_block">
+                </nav>
+                <div class="filter__card_block">
                     <div class="card">
                         <img src="images/card_1.png" alt="model">
                         <div class="card__dark">
@@ -114,7 +116,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="images/card_2.png" alt="model">
+                        <img src="images/card_7.jpg" alt="model">
                         <div class="card__dark">
                             <div class="card__dark_button">
                                 <img src="images/cart.svg" alt="cart">
@@ -159,7 +161,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="images/card_5.png" alt="model">
+                        <img src="images/card_8.jpg" alt="model">
                         <div class="card__dark">
                             <div class="card__dark_button">
                                 <img src="images/cart.svg" alt="cart">
@@ -174,7 +176,52 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="images/card_6.png" alt="model">
+                        <img src="images/card_9.jpg" alt="model">
+                        <div class="card__dark">
+                            <div class="card__dark_button">
+                                <img src="images/cart.svg" alt="cart">
+                                <div>Add to Cart</div>
+                            </div>
+                        </div>
+                        <div class="card__info">
+                            <h4 class="card__info_item">ELLERY X M'O CAPSULE</h4>
+                            <p class="card__info_text">Known for her sculptural takes on traditional tailoring,
+                                Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="card__info_price">$52.00</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/card_10.jpg" alt="model">
+                        <div class="card__dark">
+                            <div class="card__dark_button">
+                                <img src="images/cart.svg" alt="cart">
+                                <div>Add to Cart</div>
+                            </div>
+                        </div>
+                        <div class="card__info">
+                            <h4 class="card__info_item">ELLERY X M'O CAPSULE</h4>
+                            <p class="card__info_text">Known for her sculptural takes on traditional tailoring,
+                                Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="card__info_price">$52.00</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/card_11.jpg" alt="model">
+                        <div class="card__dark">
+                            <div class="card__dark_button">
+                                <img src="images/cart.svg" alt="cart">
+                                <div>Add to Cart</div>
+                            </div>
+                        </div>
+                        <div class="card__info">
+                            <h4 class="card__info_item">ELLERY X M'O CAPSULE</h4>
+                            <p class="card__info_text">Known for her sculptural takes on traditional tailoring,
+                                Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="card__info_price">$52.00</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/card_12.jpg" alt="model">
                         <div class="card__dark">
                             <div class="card__dark_button">
                                 <img src="images/cart.svg" alt="cart">
@@ -189,7 +236,18 @@
                         </div>
                     </div>
                 </div>
-                <a class="fetured__button" href="#">Browse All Product</a>
+                <nav class="nav__low">
+                    <a href="#"><img src="images/code_left.svg" alt="code"></a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">.....</a>
+                    <a href="#">20</a>
+                    <a href="#"><img src="images/code_right.svg" alt="code"></a>
+                </nav>
             </div>
         </div>
         <div class="footer">
@@ -230,7 +288,7 @@
                         <form class="subscribe__form" action="#">
                             <input class="footer__middle_block_subscribe_email" id="subscribe" type="email"
                                 placeholder="Enter Your Email">
-                            <button class="subscribe__button">Subscribe</button>
+                            <button class="subscribe__button" href="#">Subscribe</button>
                         </form>
 
                     </div>
