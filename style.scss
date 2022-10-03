@@ -455,8 +455,11 @@ $colorPink: #F16D7F;
 }
 
 .nav__center {
-    flex-grow: 1;
-    text-align: center;
+    margin-left: 292px;
+}
+
+.nav__center_size {
+    position: relative;
 }
 
 .nav__left_filter {
@@ -469,6 +472,8 @@ $colorPink: #F16D7F;
     z-index: 2;
     top: 2px;
 }
+
+
 
 .nav__left_img {
     padding-left: 55px;
@@ -485,13 +490,13 @@ $colorPink: #F16D7F;
     top: 2px;
 }
 
-.nav__left:hover .nav__left_hidden  {
+.nav__left:hover .nav__left_hidden {
     display: block;
-        
+
 }
 
 
-.nav__center a {
+.nav__center_category {
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
@@ -499,32 +504,43 @@ $colorPink: #F16D7F;
     color: #6F6E6E;
     padding-right: 10px;
     padding-left: 28px;
+
+}
+
+.nav__center>div {
+    display: inline-block;
 }
 
 .nav__center_hidden {
     position: absolute;
-    right: 440px;
     z-index: 1;
-    top: 80px;
+    padding: 7px 9.5px;
     background: #FFFFFF;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     width: 79px;
     height: 103px;
     box-sizing: border-box;
-    padding: 7px 31px;
+    display: none;
 }
 
-.nav__center_hidden ul {
-    list-style-type: none;
+.nav__center_size:hover .nav__center_hidden {
+    display: block;
+}
+
+.nav__center_hidden input {
+    margin-right: 9.5px;
+    margin-bottom: 10px;
+    border: 1px solid #EBEBEB;
+}
+
+.nav__center_hidden_item {
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
     color: #6F6E6E;
 }
 
-.nav__center_hidden li {
-    padding-bottom: 9px;
-}
+
 
 .filter__card_block {
     display: grid;
@@ -823,6 +839,10 @@ $colorPink: #F16D7F;
     .footer__middle_block_subscribe_heading {
         padding-bottom: 27px;
     }
+
+    .nav__center {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 667px) {
@@ -972,4 +992,18 @@ $colorPink: #F16D7F;
         flex-direction: column;
         justify-content: space-evenly;
     }
+
+    .nav__left_img {
+        padding-left: 0;
+    }
+
+    .nav__center {
+        margin-left: 0;
+    }
+
+    .nav__center>div:not(:last-child) {
+        padding-right: 15px;
+    }
+
+
 }
