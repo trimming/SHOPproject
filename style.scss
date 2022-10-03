@@ -396,9 +396,7 @@ $colorPink: #F16D7F;
 }
 
 //-------FILTER
-.filter {
-    position: relative;
-}
+
 
 .filter__nav {
     display: flex;
@@ -406,32 +404,21 @@ $colorPink: #F16D7F;
     padding-bottom: 65px;
 }
 
-
+.nav__left {
+    position: relative;
+}
 
 .nav__left_hidden {
     position: absolute;
     z-index: 1;
-    top: 53px;
+    top: -7px;
     background: #FFFFFF;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     height: 531px;
     width: 360px;
     padding: 13px 16px;
-    display: block;
     box-sizing: border-box;
-}
-
-.nav__left_hidden_filter {
-    padding-bottom: 16px;
-}
-
-.nav__left_hidden_filter a {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #EF5B70;
-    text-decoration: none;
-    padding-right: 12px;
+    display: none;
 }
 
 .nav__left_hidden_category li {
@@ -472,14 +459,37 @@ $colorPink: #F16D7F;
     text-align: center;
 }
 
-.nav__left a {
+.nav__left_filter {
     text-decoration: none;
     font-weight: 600;
     line-height: 17px;
     color: #000000;
     font-size: 14px;
-    padding-right: 11px;
+    position: absolute;
+    z-index: 2;
+    top: 2px;
 }
+
+.nav__left_img {
+    padding-left: 55px;
+}
+
+.nav__left_hidden_img {
+    padding-bottom: 16px;
+    padding-left: 55px;
+}
+
+.nav__left:hover .nav__left_filter {
+    color: #EF5B70;
+    left: 16px;
+    top: 2px;
+}
+
+.nav__left:hover .nav__left_hidden  {
+    display: block;
+        
+}
+
 
 .nav__center a {
     text-decoration: none;
