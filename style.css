@@ -790,6 +790,13 @@
   background: #FFFFFF;
   padding-top: 65px;
   padding-bottom: 65px;
+  margin-bottom: 128px;
+}
+
+@media (max-width: 1024px) {
+  .moschino {
+    margin: 0 !important;
+  }
 }
 
 .moschino__heading {
@@ -809,6 +816,13 @@
   padding-bottom: 65px;
   padding-top: 12px;
   width: 555px;
+}
+
+@media (max-width: 667px) {
+  .moschino__info {
+    max-width: 326px;
+    padding-bottom: 32px;
+  }
 }
 
 .moschino__info_heading {
@@ -838,11 +852,24 @@
   margin-bottom: 65px;
 }
 
+@media (max-width: 667px) {
+  .moschino hr {
+    width: 175px;
+    margin-bottom: 50px;
+  }
+}
+
 .moschino__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 49px;
+}
+
+@media (max-width: 667px) {
+  .moschino__nav {
+    margin-bottom: 65px;
+  }
 }
 
 .moschino__nav a {
@@ -853,8 +880,93 @@
   margin-right: 9px;
 }
 
+@media (max-width: 667px) {
+  .moschino__nav a {
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 400;
+    color: #6F6E6E;
+    margin-right: 10px;
+    margin-left: 25px;
+  }
+}
+
 .moschino__button {
   border: 1px solid #FF6A6A;
+  padding: 14px 56px 8px 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.moschino__button a {
+  margin-left: 23px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F26376;
+}
+
+.product__cards {
+  display: -ms-grid;
+  display: grid;
+  margin-bottom: 128px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 581px;
+      grid-template-rows: 581px;
+  gap: 30px;
+}
+
+@media (max-width: 1024px) {
+  .product__cards {
+    -ms-grid-columns: (360px)[2];
+        grid-template-columns: repeat(2, 360px);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 128px;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 667px) {
+  .product__cards {
+    margin-bottom: 64px;
+    -ms-grid-columns: 360px;
+        grid-template-columns: 360px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .product__cards .card__2 {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+  }
+}
+
+@media (max-width: 667px) {
+  .product__cards .card__2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .product__cards .card__3 {
+    display: none;
+  }
+}
+
+@media (max-width: 667px) {
+  .product__cards .card__3 {
+    display: block;
+  }
 }
 
 .footer__upper {
@@ -1094,7 +1206,7 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .filter__card_block .card:nth-child(3) {
+  .card_3 {
     display: none;
   }
   .footer__upper_block {
