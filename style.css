@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
-.hidden__menu_heading, .hidden__menu_item, .hidden__menu_category, .fetured__heading_text, .card__dark_button div, .card__info_text, .arrivals__container_right a, .filter__nav .nav__left_filter, .filter__nav .nav__left_hidden_category, .filter__nav .nav__left_hidden_category a, .filter__nav .nav__center_category, .footer__middle_block_subscribe_email, .subscribe__button {
+.hidden__menu_heading, .hidden__menu_item, .hidden__menu_category, .fetured__heading_text, .card__dark_button div, .card__info_text, .arrivals__container_right a, .filter__nav .nav__left_filter, .filter__nav .nav__left_hidden_category, .filter__nav .nav__left_hidden_category a, .filter__nav .nav__center_category, .moschino__heading, .moschino__info_text, .moschino__nav a, .footer__middle_block_subscribe_email, .subscribe__button {
   font-size: 14px;
   line-height: 17px;
 }
@@ -772,6 +772,89 @@
     position: absolute;
     right: 0;
   }
+}
+
+.moschino {
+  border: 1px solid #EAEAEA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -65px;
+  background: #FFFFFF;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.moschino__heading {
+  color: #F16D7F;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+
+.moschino__border_line {
+  background: #EF5B70;
+  height: 3px;
+  width: 63px;
+}
+
+.moschino__info {
+  text-align: center;
+  padding-bottom: 65px;
+  padding-top: 12px;
+  width: 555px;
+}
+
+.moschino__info_heading {
+  font-weight: 300;
+  line-height: 22px;
+  font-size: 18px;
+  color: #4D4D4D;
+  margin-bottom: 48px;
+}
+
+.moschino__info_text {
+  color: #5E5E5E;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+
+.moschino__info span {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #EF5B70;
+}
+
+.moschino hr {
+  border: 1px solid #EAEAEA;
+  width: 641px;
+  margin-bottom: 65px;
+}
+
+.moschino__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 49px;
+}
+
+.moschino__nav a {
+  color: #6F6E6E;
+  font-weight: 400;
+  text-decoration: none;
+  margin-left: 23px;
+  margin-right: 9px;
+}
+
+.moschino__button {
+  border: 1px solid #FF6A6A;
 }
 
 .footer__upper {
