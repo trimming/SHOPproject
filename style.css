@@ -705,27 +705,24 @@
   color: #EF5B70;
 }
 
-.product {
-  background: #F7F7F7;
-  height: 777px;
-}
-
-@media (max-width: 1024px) {
-  .product {
-    height: 624px;
-  }
-}
-
 .product__container {
   max-width: 1600px;
   margin: 0 auto;
-  height: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background: #F7F7F7;
+  min-height: 777px;
+}
+
+@media (max-width: 1024px) {
+  .product__container {
+    min-height: 624px;
+    position: relative;
+  }
 }
 
 .product__container_arrow {
@@ -741,8 +738,14 @@
 }
 
 .product__container_model {
-  display: inline-block;
+  display: block;
   margin-bottom: 41px;
+  margin-top: 11px;
+  margin-left: auto;
+  margin-right: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
 }
 
 @media (max-width: 1024px) {
@@ -756,19 +759,18 @@
   .product__container_model {
     margin-bottom: 85px;
     margin-top: 85px;
-    position: relative;
   }
 }
 
-@media (max-width: 468px) {
-  .product__container img:first-child {
+@media (max-width: 700px) {
+  .product__container div:first-child {
     position: absolute;
-    z-index: 1;
+    left: 0;
   }
 }
 
-@media (max-width: 468px) {
-  .product__container img:last-child {
+@media (max-width: 700px) {
+  .product__container div:last-child {
     position: absolute;
     right: 0;
   }
@@ -786,11 +788,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: -65px;
+  margin-top: -64px;
   background: #FFFFFF;
   padding-top: 65px;
   padding-bottom: 65px;
   margin-bottom: 128px;
+  position: relative;
 }
 
 @media (max-width: 1024px) {
@@ -815,13 +818,15 @@
   text-align: center;
   padding-bottom: 65px;
   padding-top: 12px;
-  width: 555px;
+  max-width: 555px;
 }
 
 @media (max-width: 667px) {
   .moschino__info {
     max-width: 326px;
     padding-bottom: 32px;
+    padding-right: 24px;
+    padding-left: 24px;
   }
 }
 
@@ -886,8 +891,8 @@
     line-height: 12px;
     font-weight: 400;
     color: #6F6E6E;
-    margin-right: 10px;
-    margin-left: 25px;
+    margin-right: 5px;
+    margin-left: 15px;
   }
 }
 
@@ -915,8 +920,8 @@
   display: -ms-grid;
   display: grid;
   margin-bottom: 128px;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (360px)[3];
+      grid-template-columns: repeat(3, 360px);
   -ms-grid-rows: 581px;
       grid-template-rows: 581px;
   gap: 30px;
@@ -939,6 +944,8 @@
     margin-bottom: 64px;
     -ms-grid-columns: 360px;
         grid-template-columns: 360px;
+    -ms-grid-rows: (581px)[2];
+        grid-template-rows: repeat(2, 581px);
   }
 }
 
