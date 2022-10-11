@@ -278,66 +278,63 @@ $colorPink: #F16D7F;
 .card {
     display: flex;
     flex-direction: column;
-}
 
-.card:hover .card__dark {
-    display: flex;
-}
+    &:hover {
+        .card__dark {
+        display: flex;
+        }        
+    }
 
-.card img {
-    position: relative;
-}
+    &__img {
+        position: relative;
+        max-width: 100%;
+    }
 
-.card__dark {
-    position: absolute;
-    background: rgba(58, 56, 56, 0.86);
-    width: 360px;
-    height: 420px;
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
+    &__dark {
+        position: absolute;
+        background: rgba(58, 56, 56, 0.86);
+        display: none;
+        justify-content: center;
+        align-items: center;
 
-.card__dark_button {
-    border: 1px solid #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 10px 13px;
-}
+        &_button {
+            border: 1px solid #FFFFFF;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 10px 13px;
 
-.card__dark_button div {
-    padding-left: 13px;
-    @include kitProp(#FFFFFF, 400);
-}
+            div {
+                padding-left: 13px;
+                @include kitProp(#FFFFFF, 400);
+            }
+        }
+    }
+    &__info {
+        background: #F8F8F8;
+        padding-top: 25px;
+        padding-bottom: 20px;
+        padding-left: 16px;
 
-.card__info {
-    background: #F8F8F8;
-    background: #F8F8F8;
-    padding-top: 25px;
-    padding-bottom: 20px;
-    padding-left: 16px;
-}
-
-.card__info_item {
-    font-weight: 400;
-    line-height: 16px;
-    color: #000000;
-    font-size: 13px;
-}
-
-.card__info_text {
-    padding-top: 13px;
-    @include kitProp(#5D5D5D, 300);
-}
-
-.card__info_price {
-    font-size: 16px;
-    line-height: 19px;
-    font-weight: 400;
-    color: #F16D7F;
-    padding-top: 18px;
+        &_item {
+            font-weight: 400;
+            line-height: 16px;
+            color: #000000;
+            font-size: 13px;
+        }
+        &_text {
+            padding-top: 13px;
+            @include kitProp(#5D5D5D, 300);
+        }
+        &_price {
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 400;
+            color: #F16D7F;
+            padding-top: 18px;
+        }
+    }
 }
 
 .fetured__button {
@@ -618,7 +615,6 @@ $colorPink: #F16D7F;
         position: relative;
     }
 
-<<<<<<< Updated upstream
     &_arrow {
         background: rgba(42, 42, 42, 0.15);
         height: 47px;
@@ -627,15 +623,6 @@ $colorPink: #F16D7F;
         padding: 12px 17px;
         box-sizing: border-box;
     }
-=======
-    &__container {
-        max-width: 1600px;
-        margin: 0 auto;
-        height: inherit;
-        display: flex;
-        justify-content: space-between;
-        position: relative;
->>>>>>> Stashed changes
 
     &_model {
         display: block;
@@ -646,17 +633,10 @@ $colorPink: #F16D7F;
         object-fit: cover;
         max-width: 100%;
 
-<<<<<<< Updated upstream
         @media (max-width: 1024px) {
             margin-bottom: 29px;
             margin-top: 30px;
         }
-=======
-        &_model {
-            display: block;
-            margin-bottom: 41px;
-            
->>>>>>> Stashed changes
 
         @media (max-width: 667px) {
             margin-bottom: 85px;
@@ -800,12 +780,12 @@ $colorPink: #F16D7F;
 .product__cards {
     display: grid;
     margin-bottom: 128px;
-    grid-template-columns: repeat(3, 360px);
-    grid-template-rows: 581px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
     gap: 30px;
 
     @media (max-width: 1024px) {
-        grid-template-columns: repeat(2, 360px);
+        grid-template-columns: repeat(2, 1fr);
         justify-content: center;
         margin-top: 128px;
         gap: 16px;
@@ -814,8 +794,8 @@ $colorPink: #F16D7F;
 
     @media (max-width: 667px) {
         margin-bottom: 64px;
-        grid-template-columns: 360px;
-        grid-template-rows: repeat(2, 581px);
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
     }
 
     .card__2 {
@@ -835,7 +815,7 @@ $colorPink: #F16D7F;
         }
 
         @media (max-width: 667px) {
-            display: block;
+            display: flex;
         }
     }
 }
