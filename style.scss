@@ -618,6 +618,7 @@ $colorPink: #F16D7F;
         position: relative;
     }
 
+<<<<<<< Updated upstream
     &_arrow {
         background: rgba(42, 42, 42, 0.15);
         height: 47px;
@@ -626,6 +627,15 @@ $colorPink: #F16D7F;
         padding: 12px 17px;
         box-sizing: border-box;
     }
+=======
+    &__container {
+        max-width: 1600px;
+        margin: 0 auto;
+        height: inherit;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+>>>>>>> Stashed changes
 
     &_model {
         display: block;
@@ -636,10 +646,17 @@ $colorPink: #F16D7F;
         object-fit: cover;
         max-width: 100%;
 
+<<<<<<< Updated upstream
         @media (max-width: 1024px) {
             margin-bottom: 29px;
             margin-top: 30px;
         }
+=======
+        &_model {
+            display: block;
+            margin-bottom: 41px;
+            
+>>>>>>> Stashed changes
 
         @media (max-width: 667px) {
             margin-bottom: 85px;
