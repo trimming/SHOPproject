@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Csrt</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -26,23 +26,64 @@
                                 <img src="images/cart.svg" alt="cart">
                                 <span>5</span>
                             </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="arrivals">
-                    <div class="arrivals__container container">
-                        <div class="arrivals__container_left"><a href="#">NEW ARRIVALS</a></div>
-                        <div class="arrivals__container_right">
-                            <a href="#">HOME</a>
-                            <span>/</span>
-                            <a href="#">MEN</a>
-                            <span>/</span>
-                            <a href="#">NEW ARRIVALS</a>
                         </div>
                     </div>
                 </div>
             </header>
+            <main class="cart">
+                <div class="cart__header">
+                    <div class="cart__header_container container">
+                        <h1>SHOPPING CART</h1>
+                    </div>
+                </div>
+                <div class="cart__content container">
+                    <div class="cart__content_card">
+                        <img class="cart__content_card_img" src="images/card_3.png" alt="product">
+                        <div class="cart__content_card_item">
+                            <h2>MANGO PEOPLE T-SHIRT</h2>
+                            <ul>
+                                <li>Price:<span>$300</span></li>
+                                <li>Color:<span>Red</span></li>
+                                <li>Size:<span>Xl</span></li>
+                                <li>Quantity:<span>2</span></li>
+                            </ul>
+                        </div>
+                        <img class="cart__content_card_close" src="images/close.svg" alt="close">
+                    </div>
+                    <form action="#">
+                        <h3>SHIPPING ADRESS</h3>
+                        <input type="text" placeholder="Bangladesh">
+                        <input type="text" placeholder="State">
+                        <input type="text" placeholder="Postcode / Zip">
+                        <button>GET A QUOTE</button>
+                    </form>
+                    <div class="cart__content_card">
+                        <img class="cart__content_card_img" src="images/card_7.jpg" alt="product">
+                        <div class="cart__content_card_item">
+                            <h2>MANGO PEOPLE T-SHIRT</h2>
+                            <ul>
+                                <li>Price:<span>$300</span></li>
+                                <li>Color:<span>Red</span></li>
+                                <li>Size:<span>Xl</span></li>
+                                <li>Quantity:<span>2</span></li>
+                            </ul>
+                        </div>
+                        <img class="cart__content_card_close" src="images/close.svg" alt="close">
+                    </div>
+                    <div class="cart__content_proceed">
+                        <h4>SUB TOTAL<span>$900</span></h4>
+                        <h2>GRAND TOTAL<span>$900</span></h2>
+                        <div></div>
+                        <button>PROCEED TO CHECKOUT</button>
+                    </div>
+                    <div class="cart__content_buttons">
+                        <button>CLEAR SHOPPING CART</button>
+                        <button>CONTINUE SHOPPING</button>
+                    </div>
+
+                </div>
+            </main>
+
         </div>
         <div class="footer">
             <div class="footer__middle">

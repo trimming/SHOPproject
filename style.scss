@@ -974,7 +974,109 @@ $colorPink: #F16D7F;
     }
 }
 
+//-------CART
+.cart {
+    &__header {
+        background: #F8F3F4;
+        height: 148px;
+
+        &_container {
+            height: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            @media (max-width: 667px) {
+                justify-content: center;
+            }
+
+            h1 {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 29px;
+                color: $colorPink;
+            }
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 40px;
+        column-gap: 128px;
+        margin-top: 96px;
+
+        &_card {
+            display: flex;
+            height: 306px;
+
+            &_img {
+                display: block;
+                height: inherit;
+                max-width: 100%;
+            }
+
+            &_item {
+                padding-top: 20px;
+                padding-left: 31px;
+
+                h2 {
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 29px;
+                    color: #222222;
+                    margin-bottom: 42px;
+                }
+
+                ul {
+                    list-style-type: none;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 31px;
+                    color: #575757;
+
+                    li {
+                        span {
+                            margin-left: 12px;
+                        }
+
+                        &:first-child {
+                            span {
+                                color: #EF5B70;
+                            }
+                        }
+
+                        &:last-child {
+                            span {
+                                margin-left: 24px;
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 22px;
+                                color: #656565;
+                                border: 1px solid #EAEAEA;
+                                padding: 0.5px 12px;
+                                box-sizing: border-box;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &_close {
+                height: 18px;
+                width: 18px;
+                margin-top: 28px;
+            }
+        }
+    }
+
+}
+
+
+
 //-------FOOTER
+
 .footer {
 
     &__upper {

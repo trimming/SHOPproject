@@ -1183,6 +1183,112 @@
   }
 }
 
+.cart__header {
+  background: #F8F3F4;
+  height: 148px;
+}
+
+.cart__header_container {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media (max-width: 667px) {
+  .cart__header_container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.cart__header_container h1 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+}
+
+.cart__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  row-gap: 40px;
+  -webkit-column-gap: 128px;
+          column-gap: 128px;
+  margin-top: 96px;
+}
+
+.cart__content_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 306px;
+}
+
+.cart__content_card_img {
+  display: block;
+  height: inherit;
+  max-width: 100%;
+}
+
+.cart__content_card_item {
+  padding-top: 20px;
+  padding-left: 31px;
+}
+
+.cart__content_card_item h2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+  margin-bottom: 42px;
+}
+
+.cart__content_card_item ul {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 31px;
+  color: #575757;
+}
+
+.cart__content_card_item ul li span {
+  margin-left: 12px;
+}
+
+.cart__content_card_item ul li:first-child span {
+  color: #EF5B70;
+}
+
+.cart__content_card_item ul li:last-child span {
+  margin-left: 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #656565;
+  border: 1px solid #EAEAEA;
+  padding: 0.5px 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cart__content_card_close {
+  height: 18px;
+  width: 18px;
+  margin-top: 28px;
+}
+
 .footer__upper {
   background: #222224;
 }
