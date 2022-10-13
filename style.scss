@@ -1001,8 +1001,8 @@ $colorPink: #F16D7F;
 
     &__content {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 652px 359px;
+        grid-template-rows: repeat(2, 1fr) 49px;
         row-gap: 40px;
         column-gap: 128px;
         margin-top: 96px;
@@ -1010,6 +1010,9 @@ $colorPink: #F16D7F;
         &_card {
             display: flex;
             height: 306px;
+            justify-content: space-around;
+            margin: 0;
+            box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
 
             &_img {
                 display: block;
@@ -1020,6 +1023,7 @@ $colorPink: #F16D7F;
             &_item {
                 padding-top: 20px;
                 padding-left: 31px;
+                padding-right: 95px;
 
                 h2 {
                     font-weight: 400;
@@ -1067,10 +1071,88 @@ $colorPink: #F16D7F;
                 height: 18px;
                 width: 18px;
                 margin-top: 28px;
+                margin-right: 22px;
             }
         }
-    }
+        form {
+            display: flex;
+            flex-direction: column;
+            padding-top: 17px;
 
+            h3 {
+                font-weight: 300;
+                line-height: 19px;
+                font-size: 16px;
+                color: #222222;
+                margin-bottom: 20px;
+
+            }
+            input {
+                border: 1px solid #A4A4A4;
+                width: inherit;
+                height: 44px;
+                margin-bottom: 21px;
+                padding-left: 17px;
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 16px;
+                color: #B1B1B1;
+
+            }
+            
+            button {
+                width: 100px;
+                height: 34px;
+                background: none;
+                border: 1px solid #A4A4A4;
+                font-weight: 300;
+                font-size: 11px;
+                line-height: 13px;
+                color: #4A4A4A;
+                margin-top: 3px;
+            }
+        }
+
+        &_proceed {
+            background: #F5F3F3;
+            height: 214px;
+            padding: 39px 34px 42px 44px;
+            box-sizing: border-box;
+            text-align: end;
+
+            h4 {
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 13px;
+                color: #4A4A4A;
+
+                span {
+                    margin-left: 30px;
+                }
+            }
+
+            h2 {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #222222;
+                margin-top: 12px;
+                margin-bottom: 21px;
+
+                span {
+                    font-weight: 700;
+                    margin-left: 30px;
+                    margin-right: 3px;
+                    color: $colorPink;
+                }
+            }
+            &_line {
+                border: 1px solid #E2E2E2;                    
+            }
+            
+
+        }
+    }
 }
 
 
