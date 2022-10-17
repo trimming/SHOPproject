@@ -1583,6 +1583,12 @@
   }
 }
 
+@media (max-width: 374px) {
+  .cart__content_buttons button {
+    max-width: 144px;
+  }
+}
+
 .footer__upper {
   background: #222224;
 }

@@ -1287,6 +1287,10 @@ $colorPink: #F16D7F;
                     line-height: 14px;
                     text-transform: none;
                 }
+
+                @media (max-width: 374px) {
+                    max-width: 144px;
+                }
             }
         }
     }
