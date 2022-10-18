@@ -1296,6 +1296,22 @@ $colorPink: #F16D7F;
     }
 }
 
+//-------REGISTRATION
+.registration {
+    margin-top: 64px;
+    margin-bottom: 96px;
+    display: flex;
+
+    &__form {
+        width: 359px;
+
+        &_text {
+            display: block;
+            width: inherit;
+            height: 44px;
+        }
+    }
+}
 
 
 //-------FOOTER
@@ -1409,10 +1425,10 @@ $colorPink: #F16D7F;
                 img {
                     transition-duration: 1s;
                 }
-                
+
                 img:hover {
                     transform: scale(2, 2);
-                    
+
                 }
             }
 

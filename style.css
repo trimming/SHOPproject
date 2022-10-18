@@ -1589,6 +1589,24 @@
   }
 }
 
+.registration {
+  margin-top: 64px;
+  margin-bottom: 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.registration__form {
+  width: 359px;
+}
+
+.registration__form_text {
+  display: block;
+  width: inherit;
+  height: 44px;
+}
+
 .footer__upper {
   background: #222224;
 }
