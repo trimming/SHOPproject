@@ -1405,6 +1405,15 @@ $colorPink: #F16D7F;
                         line-height: 22px;
                     }
                 }
+
+                img {
+                    transition-duration: 1s;
+                }
+                
+                img:hover {
+                    transform: scale(2, 2);
+                    
+                }
             }
 
             &_subscribe {
@@ -1502,6 +1511,11 @@ $colorPink: #F16D7F;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                transition-duration: 1s;
+
+                &:hover {
+                    transform: scale(1.5, 1.5);
+                }
             }
         }
 

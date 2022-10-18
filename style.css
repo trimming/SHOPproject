@@ -1733,6 +1733,16 @@
   }
 }
 
+.footer__middle_block_feedback img {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.footer__middle_block_feedback img:hover {
+  -webkit-transform: scale(2, 2);
+          transform: scale(2, 2);
+}
+
 .footer__middle_block_subscribe {
   text-align: center;
 }
@@ -1861,6 +1871,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.footer__copy_box_icon:hover {
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
 }
 
 .footer__copy_right {
