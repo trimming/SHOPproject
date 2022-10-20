@@ -1323,11 +1323,89 @@ $colorPink: #F16D7F;
             font-size: 13px;
             padding-left: 16px;
             border: 1px solid #A4A4A4;
+            box-sizing: border-box;
         }
 
-        &:nth-child(2) input,
-        &:last-child input {
-            margin-top: 21px;
+        .first_name,
+        .email {
+            margin-bottom: 21px;
+        }
+
+        .male {
+            margin-top: 31px;
+        }
+
+        .male_text {
+            font-weight: 300;
+            line-height: 13px;
+            font-size: 11px;
+            color: #000000;
+            margin-right: 20px;
+            margin-left: 10px;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #B1B1B1;
+            margin-top: 15px;
+            margin-bottom: 39px;
+        }
+
+        button {
+            box-sizing: border-box;
+            background-color: #F16D7F;
+            padding: 16px 29px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            border: none;
+
+            img {
+                margin-left: 20px;
+            }
+        }
+
+        &_login {
+            margin-top: 33px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__loyalty {
+        margin-left: 128px;
+
+        h2 {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+            margin-bottom: 22px;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+            margin-bottom: 21px;
+        }
+
+        ul {
+            margin-left: 20px;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+            list-style-image: url(images/buttonArrow.svg);
+
+            li {
+                margin-bottom: 16px;
+
+            }
+
         }
     }
 }

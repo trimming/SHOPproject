@@ -1619,11 +1619,89 @@
   font-size: 13px;
   padding-left: 16px;
   border: 1px solid #A4A4A4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.registration__form:nth-child(2) input,
-.registration__form:last-child input {
-  margin-top: 21px;
+.registration__form .first_name,
+.registration__form .email {
+  margin-bottom: 21px;
+}
+
+.registration__form .male {
+  margin-top: 31px;
+}
+
+.registration__form .male_text {
+  font-weight: 300;
+  line-height: 13px;
+  font-size: 11px;
+  color: #000000;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.registration__form p {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin-top: 15px;
+  margin-bottom: 39px;
+}
+
+.registration__form button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #F16D7F;
+  padding: 16px 29px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  border: none;
+}
+
+.registration__form button img {
+  margin-left: 20px;
+}
+
+.registration__form_login {
+  margin-top: 33px;
+  margin-bottom: 20px;
+}
+
+.registration__loyalty {
+  margin-left: 128px;
+}
+
+.registration__loyalty h2 {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 22px;
+}
+
+.registration__loyalty p {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 21px;
+}
+
+.registration__loyalty ul {
+  margin-left: 20px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  list-style-image: url(images/buttonArrow.svg);
+}
+
+.registration__loyalty ul li {
+  margin-bottom: 16px;
 }
 
 .footer__upper {
