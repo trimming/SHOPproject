@@ -1305,10 +1305,29 @@ $colorPink: #F16D7F;
     &__form {
         width: 359px;
 
+        h5 {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+            margin-bottom: 20px;
+        }
+
         &_text {
             display: block;
             width: inherit;
             height: 44px;
+            font-weight: 300;
+            line-height: 16px;
+            color: #B1B1B1;
+            font-size: 13px;
+            padding-left: 16px;
+            border: 1px solid #A4A4A4;
+        }
+
+        &:nth-child(2) input,
+        &:last-child input {
+            margin-top: 21px;
         }
     }
 }
