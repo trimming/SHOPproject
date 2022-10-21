@@ -1597,6 +1597,12 @@
   display: flex;
 }
 
+@media (max-width: 1024px) {
+  .registration {
+    margin-top: 40px;
+  }
+}
+
 .registration__form {
   width: 359px;
 }
@@ -1630,6 +1636,18 @@
 
 .registration__form .male {
   margin-top: 31px;
+}
+
+.registration__form .other,
+.registration__form .other_text {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .registration__form .other,
+  .registration__form .other_text {
+    display: inline-block;
+  }
 }
 
 .registration__form .male_text {
@@ -1675,33 +1693,46 @@
   margin-left: 128px;
 }
 
-.registration__loyalty h2 {
+@media (max-width: 1024px) {
+  .registration__loyalty {
+    margin-left: 22px;
+  }
+}
+
+.registration__loyalty h2,
+.registration__loyalty p,
+.registration__loyalty ul {
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
   color: #000000;
+}
+
+@media (max-width: 1024px) {
+  .registration__loyalty h2,
+  .registration__loyalty p,
+  .registration__loyalty ul {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.registration__loyalty h2 {
   margin-bottom: 22px;
 }
 
 .registration__loyalty p {
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000000;
   margin-bottom: 21px;
 }
 
 .registration__loyalty ul {
-  margin-left: 20px;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000000;
-  list-style-image: url(images/buttonArrow.svg);
+  margin-left: 27px;
+  list-style-image: url(images/listCheck.svg);
 }
 
 .registration__loyalty ul li {
   margin-bottom: 16px;
+  padding-left: 23px;
 }
 
 .footer__upper {

@@ -1302,6 +1302,10 @@ $colorPink: #F16D7F;
     margin-bottom: 96px;
     display: flex;
 
+    @media (max-width: 1024px) {
+        margin-top: 40px;
+    }
+
     &__form {
         width: 359px;
 
@@ -1333,6 +1337,15 @@ $colorPink: #F16D7F;
 
         .male {
             margin-top: 31px;
+        }
+
+        .other,
+        .other_text {
+            display: none;
+
+            @media (max-width: 1024px) {
+                display: inline-block;
+            }
         }
 
         .male_text {
@@ -1377,33 +1390,39 @@ $colorPink: #F16D7F;
     &__loyalty {
         margin-left: 128px;
 
-        h2 {
+        @media (max-width: 1024px) {
+            margin-left: 22px;
+        }
+
+        h2,
+        p,
+        ul {
             font-weight: 300;
             font-size: 24px;
             line-height: 29px;
             color: #000000;
+
+            @media (max-width: 1024px) {
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+
+        h2 {
             margin-bottom: 22px;
         }
 
         p {
-            font-weight: 300;
-            font-size: 24px;
-            line-height: 29px;
-            color: #000000;
             margin-bottom: 21px;
         }
 
         ul {
-            margin-left: 20px;
-            font-weight: 300;
-            font-size: 24px;
-            line-height: 29px;
-            color: #000000;
-            list-style-image: url(images/buttonArrow.svg);
+            margin-left: 27px;
+            list-style-image: url(images/listCheck.svg);
 
             li {
                 margin-bottom: 16px;
-
+                padding-left: 23px;
             }
 
         }
