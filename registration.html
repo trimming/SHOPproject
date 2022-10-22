@@ -40,12 +40,20 @@
                     <h5>Your Name</h5>
                     <input class="registration__form_text first_name" type="text" placeholder="First Name">
                     <input class="registration__form_text" type="text" placeholder="Last Name">
-                    <input class="male" type="radio" name="male" id="male">
-                    <label class="male_text" for="male">Male</label>
-                    <input type="radio" name="male" id="female">
-                    <label class="male_text" for="female">Female</label>
-                    <input class="male other" type="radio" name="male" id="other">
-                    <label class="male_text other_text" for="other">Other</label>
+                    <div class="registration__form_male">
+                        <div class="registration__form_male_item">
+                            <input type="radio" name="male" id="male">
+                            <label class="male_text" for="male">Male</label>
+                        </div>
+                        <div class="registration__form_male_item">
+                            <input type="radio" name="male" id="female">
+                            <label class="male_text" for="female">Female</label>
+                        </div>
+                        <div class="registration__form_male_item other">
+                            <input type="radio" name="male" id="other">
+                            <label class="male_text other_text" for="other">Other</label>
+                        </div>
+                    </div>
                     <h5 class="registration__form_login">Login details</h5>
                     <input class="registration__form_text email" type="email" placeholder="Email">
                     <input class="registration__form_text" type="password" placeholder="Password">

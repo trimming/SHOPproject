@@ -1305,9 +1305,16 @@ $colorPink: #F16D7F;
     @media (max-width: 1024px) {
         margin-top: 40px;
     }
+    @media (max-width: 668px) {
+        flex-direction: column;
+    }
 
     &__form {
-        width: 359px;
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 668px) {
+            margin-bottom: 40px;
+        }
 
         h5 {
             font-weight: 300;
@@ -1335,16 +1342,21 @@ $colorPink: #F16D7F;
             margin-bottom: 21px;
         }
 
-        .male {
+        &_male {
             margin-top: 31px;
+            display: flex;
+
+            &_item {
+                display: flex;
+                align-items: center;
+            }
         }
 
-        .other,
-        .other_text {
+        .other {
             display: none;
 
             @media (max-width: 1024px) {
-                display: inline-block;
+                display: flex;
             }
         }
 
