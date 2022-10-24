@@ -127,6 +127,29 @@ $colorPink: #F16D7F;
     &__wrap {
         position: relative;
     }
+
+    &__heading {
+        background: #F8F3F4;
+        height: 148px;
+
+        &_container {
+            height: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            @media (max-width: 667px) {
+                justify-content: center;
+            }
+
+            h1 {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 29px;
+                color: $colorPink;
+            }
+        }
+    }
 }
 
 .header__content {
@@ -976,29 +999,6 @@ $colorPink: #F16D7F;
 
 //-------CART
 .cart {
-    &__header {
-        background: #F8F3F4;
-        height: 148px;
-
-        &_container {
-            height: inherit;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-
-            @media (max-width: 667px) {
-                justify-content: center;
-            }
-
-            h1 {
-                font-weight: 400;
-                font-size: 24px;
-                line-height: 29px;
-                color: $colorPink;
-            }
-        }
-    }
-
     &__content {
         display: grid;
         grid-template-columns: 652px 359px;
@@ -1296,6 +1296,150 @@ $colorPink: #F16D7F;
     }
 }
 
+//-------REGISTRATION
+.registration {
+    margin-top: 64px;
+    margin-bottom: 96px;
+    display: flex;
+
+    @media (max-width: 1024px) {
+        margin-top: 40px;
+    }
+    @media (max-width: 668px) {
+        flex-direction: column;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 668px) {
+            margin-bottom: 40px;
+        }
+
+        h5 {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+            margin-bottom: 20px;
+        }
+
+        &_text {
+            display: block;
+            width: inherit;
+            height: 44px;
+            font-weight: 300;
+            line-height: 16px;
+            color: #B1B1B1;
+            font-size: 13px;
+            padding-left: 16px;
+            border: 1px solid #A4A4A4;
+            box-sizing: border-box;
+        }
+
+        .first_name,
+        .email {
+            margin-bottom: 21px;
+        }
+
+        &_male {
+            margin-top: 31px;
+            display: flex;
+
+            &_item {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .other {
+            display: none;
+
+            @media (max-width: 1024px) {
+                display: flex;
+            }
+        }
+
+        .male_text {
+            font-weight: 300;
+            line-height: 13px;
+            font-size: 11px;
+            color: #000000;
+            margin-right: 20px;
+            margin-left: 10px;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #B1B1B1;
+            margin-top: 15px;
+            margin-bottom: 39px;
+        }
+
+        button {
+            box-sizing: border-box;
+            background-color: #F16D7F;
+            padding: 16px 29px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            border: none;
+
+            img {
+                margin-left: 20px;
+            }
+        }
+
+        &_login {
+            margin-top: 33px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__loyalty {
+        margin-left: 128px;
+
+        @media (max-width: 1024px) {
+            margin-left: 22px;
+        }
+
+        h2,
+        p,
+        ul {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+
+            @media (max-width: 1024px) {
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+
+        h2 {
+            margin-bottom: 22px;
+        }
+
+        p {
+            margin-bottom: 21px;
+        }
+
+        ul {
+            margin-left: 27px;
+            list-style-image: url(images/listCheck.svg);
+
+            li {
+                margin-bottom: 16px;
+                padding-left: 23px;
+            }
+
+        }
+    }
+}
 
 
 //-------FOOTER
@@ -1405,6 +1549,15 @@ $colorPink: #F16D7F;
                         line-height: 22px;
                     }
                 }
+
+                img {
+                    transition-duration: 1s;
+                }
+
+                img:hover {
+                    transform: scale(2, 2);
+
+                }
             }
 
             &_subscribe {
@@ -1502,6 +1655,11 @@ $colorPink: #F16D7F;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                transition-duration: 1s;
+
+                &:hover {
+                    transform: scale(1.5, 1.5);
+                }
             }
         }
 
