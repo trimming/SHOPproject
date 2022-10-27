@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 @import "_variables";
-@import "/blocks/card";
+@import "blocks/card";
 
 * {
     margin: 0;
@@ -658,12 +658,6 @@
             row-gap: 16px;
             grid-template-rows: repeat(8, 1fr);
         }
-
-        .card_3 {
-            @media (max-width: 1024px) {
-                display: none;
-            }
-        }
     }
 
     .nav__low {
@@ -893,27 +887,6 @@
         margin-bottom: 64px;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
-    }
-
-    .card__2 {
-        @media (max-width: 1024px) {
-            grid-row-start: 1;
-            grid-column-start: 1;
-        }
-
-        @media (max-width: 667px) {
-            display: none;
-        }
-    }
-
-    .card__3 {
-        @media (max-width: 1024px) {
-            display: none;
-        }
-
-        @media (max-width: 667px) {
-            display: block;
-        }
     }
 }
 
@@ -1225,6 +1198,7 @@
     @media (max-width: 1024px) {
         margin-top: 40px;
     }
+
     @media (max-width: 668px) {
         flex-direction: column;
     }
@@ -1232,6 +1206,7 @@
     &__form {
         display: flex;
         flex-direction: column;
+
         @media (max-width: 668px) {
             margin-bottom: 40px;
         }

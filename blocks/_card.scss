@@ -1,8 +1,7 @@
-
-.card {
+.b-card {
 
     &:hover {
-        .card__wrap_button {
+        .b-card__wrapBtn {
             display: flex;
         }
     }
@@ -10,12 +9,12 @@
     &__wrap {
         position: relative;
 
-        .card__img {
+        .b-card__img {
             display: block;
             width: 100%;
         }
 
-        &_button {
+        &Btn {
             display: none;
             position: absolute;
             justify-content: center;
@@ -48,24 +47,49 @@
         padding-bottom: 20px;
         padding-left: 16px;
 
-        &_item {
+        &Item {
             font-weight: 400;
             line-height: 16px;
             color: #000000;
             font-size: 13px;
         }
 
-        &_text {
+        &Text {
             padding-top: 13px;
             @include kitProp(#5D5D5D, 300);
         }
 
-        &_price {
+        &Price {
             font-size: 16px;
             line-height: 19px;
             font-weight: 400;
             color: #F16D7F;
             padding-top: 18px;
+        }
+    }
+
+    &_notActive_size_ml {
+        @media (max-width: 1024px) {
+            display: none;
+        }
+    }
+
+    &_notActive_size_s {
+        @media (max-width: 667px) {
+            display: none;
+        }
+    }
+
+    &_active_size_s {
+        @media (max-width: 667px) {
+            display: block;
+        }
+    }
+
+    &_location {
+        @media (max-width: 1024px) {
+            grid-row-start: 1;
+            grid-column-start: 1;
         }
     }
 }
