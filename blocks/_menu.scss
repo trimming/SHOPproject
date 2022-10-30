@@ -1,0 +1,64 @@
+.b-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 16px 19px;
+
+    @media (max-width: 667px) {
+        padding: 18px 0 19px;
+    }
+
+    &__left {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        width: 111px;
+    }
+
+    &__right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 189px;
+
+        @media (max-width: 667px) {
+            width: 32px;
+        }
+
+        a {
+            &:nth-child(2) {
+
+                @media (max-width: 667px) {
+                    display: none;
+                }
+            }
+        }
+
+        &Cart {
+            position: relative;
+
+            @media (max-width: 667px) {
+                display: none;
+            }
+
+            img {
+                height: 29px;
+                width: 32px;
+            }
+        }
+
+        span {
+            position: absolute;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: #FFFFFF;
+            top: 17px;
+            right: 99px;
+            background: #F16D7F;
+            border-radius: 50%;
+            padding: 3px 6px;
+            top: -5px;
+            right: -10px;
+        }
+    }
+}
