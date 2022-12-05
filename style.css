@@ -195,6 +195,20 @@
 
 .b-menu__cart {
   position: absolute;
+  background: white;
+  width: 300px;
+  right: 0;
+  top: 35px;
+  padding: 10px;
+  line-height: 30px;
+  color: #6F6E6E;
+  font-size: 14px;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.b-menu__cartList {
+  list-style-type: none;
 }
 
 .b-hiddenMenu {
