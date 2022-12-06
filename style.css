@@ -205,10 +205,22 @@
   font-size: 14px;
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  z-index: 1;
+  display: none;
 }
 
-.b-menu__cartList {
-  list-style-type: none;
+.b-menu__cartItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 0.5px solid #6F6E6E;
+}
+
+.b-menu__cart_active {
+  display: block;
 }
 
 .b-hiddenMenu {

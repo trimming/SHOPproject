@@ -73,9 +73,16 @@
         color: #6F6E6E;
         font-size: 14px;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-
-        &List {
-            list-style-type: none;
+        z-index: 1;
+        display: none;
+        
+        &Item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 0.5px solid #6F6E6E;
         }
+    }
+    &__cart_active {
+        display: block;
     }
 }
