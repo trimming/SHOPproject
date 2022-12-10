@@ -49,6 +49,7 @@
   padding: 10px 13px;
   background: none;
   border: 1px solid #FFFFFF;
+  cursor: pointer;
 }
 
 .b-card__wrapBtn button img {
@@ -196,17 +197,29 @@
 .b-menu__cart {
   position: absolute;
   background: white;
-  width: 300px;
+  width: 450px;
   right: 0;
   top: 35px;
   padding: 10px;
   line-height: 30px;
   color: #6F6E6E;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 300;
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   z-index: 1;
   display: none;
+}
+
+.b-menu__cartWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .b-menu__cartItem {

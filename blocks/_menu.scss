@@ -65,23 +65,32 @@
     &__cart {
         position: absolute;
         background: white;
-        width: 300px;
+        width: 450px;
         right: 0;
         top: 35px;
         padding: 10px;
         line-height: 30px;
         color: #6F6E6E;
-        font-size: 14px;
+        font-size: 16px;
+        font-weight: 300;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
         z-index: 1;
         display: none;
-        
+
+        &Wrap {
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
         &Item {
             display: flex;
             justify-content: space-between;
             border-bottom: 0.5px solid #6F6E6E;
         }
     }
+
     &__cart_active {
         display: block;
     }
