@@ -31,5 +31,5 @@ productCards.forEach(function (productCard) {
     });
 });
 cart.addEventListener('click', () => {
-    wrap.classList.add('b-menu__cart_active');
+    wrap.classList.toggle('b-menu__cart_active');
 });

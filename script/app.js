@@ -34,8 +34,8 @@ function showProduct(buttonEvent) {
                     let renderMarkupMulti = document.querySelectorAll('.productMulti');
                     renderMarkupMulti.forEach((multi) => {
                         if (buttonEvent === multi.getAttribute('type')) {
-                            multi.innerText = product.price * quantity.innerText;
-                            total.innerText = +total.innerText + product.multi;
+                            multi.innerText = (product.price * quantity.innerText).toFixed(2);
+                            total.innerText = (+total.innerText + product.multi).toFixed(2);
                         }
                     });
                 }
